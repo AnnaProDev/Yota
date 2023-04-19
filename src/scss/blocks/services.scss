@@ -1,0 +1,54 @@
+.services {
+	padding-top: 120px;
+	.title {
+		width: 415px;
+		color: $second-color;
+		font-family: 'Fjalla One';
+		font-weight: 400;
+		font-size: 60px;
+		line-height: 60px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		span {
+			color: $first-color;
+		}
+	}
+	.line {
+		background: $first-color;
+		opacity: 0.6;
+		height: 1px;
+		width: 100%;
+	}
+	&_wrapper {
+		display: flex;
+		height: 300px;
+		div {
+			width: 50%;
+		}
+	}
+	&_descr {
+		display: flex;
+		position: relative;
+		padding-top: 23px;
+		color: $first-color;
+		text-align: justify;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		span {
+			display: block;
+			width: 50%;
+			padding-left: 15px;
+		}
+		&::before{
+			content: "";
+			position: absolute;
+			background-color: $first-color;
+			height: 300px;
+			width: 1px;
+			opacity: 0.6;
+			top: 0px;
+		}
+	}
+}
