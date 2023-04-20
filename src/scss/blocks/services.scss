@@ -1,25 +1,6 @@
 .services {
 	padding-top: 120px;
-	.title {
-		width: 415px;
-		color: $second-color;
-		font-family: 'Fjalla One';
-		font-weight: 400;
-		font-size: 60px;
-		line-height: 60px;
-		text-transform: uppercase;
-		margin-bottom: 15px;
-		span {
-			color: $first-color;
-		}
-	}
-	.line {
-		background: $first-color;
-		opacity: 0.6;
-		height: 1px;
-		width: 100%;
-	}
-	&_wrapper {
+	&_first {
 		display: flex;
 		height: 300px;
 		div {
@@ -49,6 +30,93 @@
 			width: 1px;
 			opacity: 0.6;
 			top: 0px;
+		}
+	}
+	&_second {
+		margin-top: 20px;
+		display: grid;
+		grid-template-columns: 25% 75%;
+	}
+	&_list {
+		display: flex;
+		flex-direction: column;
+	}
+	.null_margin {
+		margin: 0;
+	}
+	&_wrapper {
+		display: flex;
+		margin-top: 15px;
+	}
+	&_class {
+		margin-right: 110px;
+	}
+	&_subtitle {
+		font-family: 'Open Sans';
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 20px;
+		color: $first-color;
+	}
+	&_img {
+		margin-top: 15px;
+	}
+	&_item {
+		display: flex;
+		flex-direction: column;
+		width: 730px;
+		margin-bottom: 15px;
+		&_name {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: relative; 
+		}
+		&_subtitle {
+			font-family: 'Open Sans';
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 24px;
+			color: $first-color;
+		}
+		&_plus {
+			height: 24px;
+			width: 24px;
+			&::before,
+			&::after {
+			content: "";
+			position:absolute;
+			background:$first-color;
+			transition: all 0.6;
+			}
+			&::before {
+			width: 24px;
+			height: 2px;
+			top: 12px;
+			transform: translateY(-50%);
+			}
+			&::after {
+			height: 24px;
+			width: 2px;
+			right: 10px;
+			transform: translateX(-50%);
+			}
+		}
+		&_descr {
+			display: flex;
+			min-height: 161px;
+			padding-top: 15px;
+			color: $first-color;
+			text-align: justify;
+			font-family: 'Open Sans';
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			gap: 15px;
+			span {
+				display: block;
+				width: 50%;
+			}
 		}
 	}
 }

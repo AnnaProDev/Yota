@@ -1,0 +1,61 @@
+.about {
+	margin-top: 80px;
+	&_title {
+		margin-bottom: 10px;
+	}
+	&_images {
+		margin: 15px 0;
+		display: flex;
+		justify-content: space-between;
+		img {
+			height: 100%;
+		}
+	}
+	&_descr {
+		display: grid;
+		grid-template-columns: 50% 25% 25%;
+	}
+	&_item {
+		position: relative;
+		height: 314px;
+		padding-right: 20px;
+		&::before{
+			content: "";
+			position: absolute;
+			background-color: $first-color;
+			height: 100%;
+			width: 1px;
+			opacity: 0.6;
+			left: -15px;
+		}
+		&:first-child {
+			&::before {
+				display: none;
+			}
+		}
+		&_title {
+			margin-top: 15px;
+			font-family: 'Fjalla One';
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 26px;
+			color: $first-color;
+		}
+		.big_title {
+			font-size: 34px;
+			line-height: 37PX;
+		}
+		&_text {
+			margin-top: 5px;
+			font-family: 'Open Sans';
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 15px;
+			color: $first-color;
+		}
+		.compact_text {
+			margin-top: 8px;
+			width: 373px;
+		}
+	}
+}
