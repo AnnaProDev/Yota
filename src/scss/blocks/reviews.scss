@@ -10,7 +10,6 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
 		&_items {
 			display: flex;
 			justify-content: space-between;
@@ -43,24 +42,10 @@
 				line-height: 19px;
 			}
 		}
-		&_control {
-			margin-top: 20px;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			width: 100%;
-		}
-		&_count {
-			font-family: 'Druk Cyr';
-			font-weight: 700;
-			font-size: 25px;
-			line-height: 32px;
-			letter-spacing: 0.06em;
-			text-transform: uppercase;
-			color: $first_color;
-		}
 		&_arrows {
+			margin-top: 20px;
 			font-size: 31px;
+			align-self: flex-end;
 		}
 	}
 }
