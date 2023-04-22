@@ -65,7 +65,7 @@
 	&_item {
 		display: flex;
 		flex-direction: column;
-		width: 730px;
+		max-width: 730px;
 		margin-bottom: 15px;
 		&_name {
 			display: flex;

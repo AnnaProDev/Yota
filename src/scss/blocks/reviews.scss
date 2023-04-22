@@ -1,25 +1,25 @@
 .reviews {
 	margin-top: 120px;
+	text-align: center;
 	.container {
-		display: flex;
+		display: inline-flex;
+		padding-right: 0;
 	}
 	.title {
+		min-width: 442px;
 		margin-right: 303px;
+		text-align: left;
 	}
-	.carousel {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		&_items {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
+	.slider {
+		position: relative;
+		width: 857px;
+		height: 350px;
+		margin: 0;
 		&_item {
+			text-align: left;
 			margin-right: 15px;
-			padding: 20px 20px 70px 13px ;
-			width: 350px;
-			height: 345px;
+			padding: 40px 20px 70px 13px ;
+			max-width: 350px;
 			background: $first-color;
 			border-radius: 6px;
 			color: #FFFFFF;
@@ -28,24 +28,36 @@
 				font-weight: 600;
 				font-size: 18px;
 			}
-			&_subtitle {
-				margin-top: 3px;
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 18px;
-			}
 			&_text {
-				margin-top: 22px;
+				margin-top: 30px;
 				width: 317px;
 				font-weight: 400;
 				font-size: 16px;
 				line-height: 19px;
 			}
 		}
-		&_arrows {
-			margin-top: 20px;
-			font-size: 31px;
-			align-self: flex-end;
+	}
+	.swiper-buttons {
+		position: relative;
+		width: 10px;
+	}
+
+	.swiper-button-next {
+		position: absolute;
+		left: -110px;
+		top: 380px;
+	}
+	.swiper-button-prev {
+		position: absolute;
+		left: -145px;
+		top: 380px;
+	}
+
+	.swiper-button-prev, .swiper-button-next {
+		&::after {
+			font-size: 25px;
+			font-weight: bold;
+			color: $first-color;
 		}
 	}
 }

@@ -9,10 +9,12 @@
 	font-family: 'Fjalla One';
 	font-weight: 400;
 	font-size: 26px;
+	line-height: 26px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
 	align-self: flex-end;
+	transition: all 0.3s;
 	&_middle {
 		width: 1095px;
 	}

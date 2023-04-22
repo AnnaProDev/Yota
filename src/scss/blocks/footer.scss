@@ -1,0 +1,91 @@
+.footer{
+	margin-top: 50px;
+	font-family: 'Open Sans';
+	color: $first-color;
+	font-weight: 400;
+	padding-bottom: 50px;
+	&_wrapper {
+		display: flex;
+	}
+	&_social {
+		width: 160px;
+		margin-right: 205px;
+		padding-top: 40px;
+		&_icons {
+			margin-top: 10px;
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+	.logo {
+		img{
+		width: 112px;
+		height: 74px;
+		}
+	}
+	.mail_link {
+		display: block;
+		margin-top: 15px;
+		font-size: 16px;
+	}
+	&_info {
+		width: 100%;
+		padding-top: 40px;
+		border-left: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		&_wrapper {
+			display: flex;
+			justify-content: space-between;
+			min-height: 180px;
+			padding-right: 237px;
+			border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		}
+	}
+	&_contacts {
+		padding-left: 45px;
+	}
+	&_address {
+		width: 190px;
+		position: relative;
+		&::before {
+			content: url(../../svgicons/nav.svg);
+			position: absolute;
+			left: -25px;
+			top: -3px;
+		}
+	}
+	&_schedule {
+		margin-top: 15px;
+		position: relative;
+		&::before {
+			content: url(../../svgicons/clock.svg);
+			position: absolute;
+			left: -25px;
+			top: -3px;
+		}
+	}
+	&_phone {
+		margin-top: 15px;
+		position: relative;
+		&::before {
+			content: url(../../svgicons/phone-footer.svg);
+			position: absolute;
+			left: -25px;
+		}
+	}
+	&_menu {
+		text-transform: uppercase;
+		font-size: 16px;
+		li {
+			margin-bottom: 10px;
+		}
+	}
+	&_authorship {
+		padding: 15px;
+		display: flex;
+		justify-content: space-between;
+		&_name {
+			text-transform: uppercase;
+		}
+	}
+}

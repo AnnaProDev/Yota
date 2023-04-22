@@ -12,7 +12,6 @@
 //<VARIABLES>====================================================================================
 $minWidth: 320px;
 $maxWidth: 1920;
-$maxWidthContainer: 1460;
 $md1: 1460;
 $md2: 991.98;
 $md3: 767.98;
@@ -45,13 +44,16 @@ body {
 @import "blocks/choice";
 @import "blocks/brands";
 @import "blocks/areas";
+@import "blocks/partners";
+@import "blocks/call";
+@import "blocks/footer";
 //</blocks>===================================================================================
 
 
 //<MAIN LAYOUT>=================================================================================
 .container {
-	max-width: 1480px;
-	padding: 0 10px;
+	max-width: 1600px;
+	padding: 0 70px;
 	margin: 0 auto;
 	@media (max-width: $md1) {
 		min-width: 970px;

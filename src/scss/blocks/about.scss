@@ -4,11 +4,13 @@
 		margin-bottom: 10px;
 	}
 	&_images {
-		margin: 15px 0;
+		margin: 15px auto;
 		display: flex;
 		justify-content: space-between;
 		img {
-			height: 100%;
+			max-width: 50%;
+			margin-right: 15px;
+			object-fit: contain;
 		}
 	}
 	&_descr {
