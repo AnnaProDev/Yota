@@ -1,11 +1,11 @@
 .services {
 	padding-top: 120px;
 	&_first {
-		display: flex;
+		position: relative;
+		right: -50%;
 		height: 300px;
-		div {
-			width: 50%;
-		}
+		width: 50%;
+		border-left: 1px solid rgba($color: $first-color, $alpha: 0.6);
 	}
 	&_descr {
 		display: flex;
@@ -22,20 +22,13 @@
 			width: 50%;
 			padding-left: 15px;
 		}
-		&::before{
-			content: "";
-			position: absolute;
-			background-color: $first-color;
-			height: 300px;
-			width: 1px;
-			opacity: 0.6;
-			top: 0px;
-		}
 	}
 	&_second {
-		margin-top: 20px;
 		display: grid;
 		grid-template-columns: 25% 75%;
+	}
+	&_title {
+		margin-top: 20px;
 	}
 	&_list {
 		display: flex;
@@ -46,7 +39,6 @@
 	}
 	&_wrapper {
 		display: flex;
-		margin-top: 15px;
 		justify-content: space-between;
 	}
 	&_class {
@@ -58,26 +50,32 @@
 		font-size: 18px;
 		line-height: 20px;
 		color: $first-color;
+		margin-top: 20px;
 	}
 	&_img {
+		// display: none;
+		max-width: 100%;
 		margin-top: 15px;
+		object-fit: contain;
+	}
+	&_items {
+		width: 730px;
 	}
 	&_item {
 		display: flex;
 		flex-direction: column;
-		max-width: 730px;
-		margin-bottom: 15px;
 		&_name {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			padding: 20px 0;
 			position: relative; 
+			width: 100%;
 		}
 		&_subtitle {
 			font-family: 'Open Sans';
 			font-weight: 400;
 			font-size: 18px;
-			line-height: 24px;
 			color: $first-color;
 		}
 		&_plus {
@@ -93,7 +91,7 @@
 			&::before {
 			width: 24px;
 			height: 2px;
-			top: 12px;
+			top: 32px;
 			transform: translateY(-50%);
 			}
 			&::after {
@@ -107,7 +105,6 @@
 			display: flex;
 			justify-content: space-between;
 			min-height: 161px;
-			padding-top: 15px;
 			color: $first-color;
 			text-align: justify;
 			font-family: 'Open Sans';
@@ -115,10 +112,20 @@
 			font-size: 14px;
 			line-height: 17px;
 			gap: 15px;
+			// display: none;
 			span {
 				display: block;
 				width: 50%;
 			}
 		}
+	}
+	// .button {
+	// 	display: none;
+	// }
+}
+
+.active {
+	.services_img {
+		display: block;
 	}
 }

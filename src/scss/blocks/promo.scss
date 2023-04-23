@@ -1,43 +1,25 @@
 .promo {
-	height: 255px;
-	padding: 38px 0 18px 0;
+	min-height: 255px;
 	.container {
 		display: flex;
 		justify-content: space-between;
 	}
-	&_title {
-		width: 715px;
-		font-family: 'Fjalla One';
-		font-weight: 400;
+	.title {
+		padding: 38px 10px 18px 0;
 		font-size: 98px;
 		line-height: 100%;
-		color: $first-color;
-		span {
-			color: $second-color
-		}
 	}
 	&_descr {
-		width: 435px;
-		padding-right: 15px;
-		position: relative;
+		padding: 38px 0px 18px 15px;
+		border-left: 1px solid rgba($color: $first-color, $alpha: 0.6);
 		p {
-			width: 350px;
+			max-width: 350px;
 			text-align: justify;
 			font-family: 'Open Sans';
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 15px;
 			color: $first-color;
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			background-color: $first-color;
-			height: 255px;
-			width: 1px;
-			top: -38px;
-			left: -15px;
-			opacity: 0.6;
 		}
 	}
 }

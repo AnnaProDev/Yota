@@ -10,3 +10,8 @@ new Swiper(".slider", {
 	 },
 	 slidesPerView: 2,
 })
+
+const plus = document.querySelectorAll(".services_item_plus");
+const descr = document.querySelectorAll(".services_item_descr");
+const button = document.querySelectorAll(".services_button");
+const image = document.querySelectorAll(".services_img");

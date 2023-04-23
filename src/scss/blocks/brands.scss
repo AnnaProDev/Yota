@@ -11,6 +11,14 @@
 		align-items: center;
 		justify-content: center;
 		border-top: 1px solid $first-color;
-	
+		transition: all 0.7s;
+		img {
+			display: block;
+			cursor: pointer;
+			transition: all 0.7s;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
 	}
 }
