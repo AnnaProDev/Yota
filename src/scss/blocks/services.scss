@@ -53,9 +53,9 @@
 		margin-top: 20px;
 	}
 	&_img {
-		// display: none;
+		display: none;
 		max-width: 100%;
-		margin-top: 15px;
+		margin: 15px 0px;
 		object-fit: contain;
 	}
 	&_items {
@@ -68,7 +68,7 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding: 20px 0;
+			padding: 15px 0;
 			position: relative; 
 			width: 100%;
 		}
@@ -79,26 +79,21 @@
 			color: $first-color;
 		}
 		&_plus {
-			height: 24px;
 			width: 24px;
+			height: 24px;
+			cursor: pointer;
 			&::before,
 			&::after {
 			content: "";
 			position:absolute;
-			background:$first-color;
-			transition: all 0.6;
-			}
-			&::before {
+			top: 26px;
 			width: 24px;
 			height: 2px;
-			top: 32px;
-			transform: translateY(-50%);
+			background-color:$first-color;
+			transition: transform 0.3s ease 0s;
 			}
 			&::after {
-			height: 24px;
-			width: 2px;
-			right: 10px;
-			transform: translateX(-50%);
+				transform: rotate(-90deg);
 			}
 		}
 		&_descr {
@@ -112,20 +107,46 @@
 			font-size: 14px;
 			line-height: 17px;
 			gap: 15px;
-			// display: none;
+			display: none;
 			span {
 				display: block;
 				width: 50%;
 			}
 		}
 	}
-	// .button {
-	// 	display: none;
-	// }
+	&_button {
+		display: none;
+		margin: 15px 0px;
+		padding: 9px 114px;
+		width: 350px;
+		height: 40px;
+		background: $first-color;
+		border-radius: 50px;
+		font-family: 'Fjalla One';
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 26px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		align-self: flex-end;
+		transition: all 0.3s;
+		&:hover {
+			background: #FFFFFF;
+			color: $first-color;
+			border: 2px solid $first-color;
+		}
+	}
 }
 
 .active {
-	.services_img {
-		display: block;
+	display: block;
+	&_flex {
+	display: flex;
+	}
+	&_plus{
+		&::after {
+			transform: rotate(0deg);
+		}
 	}
 }

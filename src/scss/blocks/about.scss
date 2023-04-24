@@ -8,9 +8,11 @@
 		display: flex;
 		justify-content: space-between;
 		img {
+			display: block;
 			max-width: 50%;
 			margin-right: 15px;
 			object-fit: contain;
+			align-self: start;
 		}
 	}
 	&_descr {
