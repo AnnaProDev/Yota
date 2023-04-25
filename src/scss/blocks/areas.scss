@@ -10,19 +10,25 @@
 			list-style-type: none;
 			position: relative;
 		}
-		li {
-			border-top: 1px solid rgba($color: $first-color, $alpha: 0.6);
-			font-family: 'Inter';
-			font-weight: 400;
-			font-size: 30px;
-			line-height: 58px ;
-			text-align: right;
-			text-transform: uppercase;
+	}
+	&_city {
+		border-top: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		font-family: 'Inter';
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 58px ;
+		text-align: right;
+		text-transform: uppercase;
+		color: $first-color;
+		span {
+			font-size: 16px;
+			position: absolute;
+			left: 0;
+		}
+		a {
 			color: $first-color;
-			span {
-				font-size: 16px;
-				position: absolute;
-				left: 0;
+			&:focus, &:active {
+				outline: none;
 			}
 		}
 	}

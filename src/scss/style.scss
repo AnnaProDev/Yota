@@ -24,7 +24,7 @@ $second-color: #FFCC00;
 @import "base/null";
 body {
 	background-color: #F8FAFF;
-	color: #000;
+	color: $first-color;
 	font-size: 14px;
 	&._lock {
 		overflow: hidden;
@@ -47,6 +47,7 @@ body {
 @import "blocks/partners";
 @import "blocks/call";
 @import "blocks/footer";
+@import "blocks/services-page";
 //</blocks>===================================================================================
 
 
