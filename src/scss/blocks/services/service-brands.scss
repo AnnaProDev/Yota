@@ -1,0 +1,41 @@
+.service-brands {
+	margin-top: 110px;
+	&_header {
+		display: flex;
+		align-items: end;
+		padding-bottom: 15px;
+	}
+	&_title {
+		width: 50%;
+	}
+	&_info {
+		max-width: 350px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		padding-left: 20px;
+	}
+	&_items {
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 205px);
+		padding-left: 365px;
+	}
+	&_item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-bottom: 1px solid $first-color;
+		transition: all 0.7s;
+		img {
+			display: block;
+			cursor: pointer;
+			transition: all 0.7s;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+}

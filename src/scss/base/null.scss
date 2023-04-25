@@ -13,9 +13,11 @@
 }
 }
 
-// :focus, :active {
-// 	outline: none;
-// }
+input {
+	&:focus, &:active {
+		outline: none;
+	}
+} 
 
 a {
 	&:focus, &:active {
@@ -63,7 +65,7 @@ a {
 	}
 }
 
-ul li {
+ul, li {
 	list-style: none;
 }
 

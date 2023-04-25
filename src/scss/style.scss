@@ -21,7 +21,7 @@ $second-color: #FFCC00;
 //</VARIABLES>====================================================================================
 
 //<NULL, COMMON PARAMETERS>========================================================================
-@import "base/null";
+@import 'base/null';
 body {
 	background-color: #F8FAFF;
 	color: $first-color;
@@ -45,9 +45,11 @@ body {
 @import "blocks/brands";
 @import "blocks/areas";
 @import "blocks/partners";
-@import "blocks/call";
 @import "blocks/footer";
-@import "blocks/services-page";
+@import "blocks/services/service-main";
+@import "blocks/services/problems";
+@import "blocks/services/service-brands";
+@import "blocks/services/book-service";
 //</blocks>===================================================================================
 
 

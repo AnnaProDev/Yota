@@ -1,9 +1,52 @@
+.call {
+	margin-top: 160px;
+	.title {
+		max-width: 606px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 66px;
+	}
+	.button {
+		margin: 20px auto;
+		width: 573px;
+	}
+	&_phone {
+		margin-top: 25px;
+		font-family: 'Fjalla One';
+		font-weight: 400;
+		font-size: 33px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $first-color;
+	}
+	.line {
+		margin-top: 10px;
+		opacity: 1;
+		&_1 {
+			opacity: 0.4;
+			margin-top: 40px;
+		}
+		&_2 {
+			opacity: 0.5;
+		}
+		&_3 {
+			opacity: 0.6;
+		}
+		&_4 {
+			opacity: 0.7;
+		}
+		&_5 {
+			opacity: 0.8;
+		}
+		&_6 {
+			opacity: 0.9;
+		}
+	}
+}
+
 .footer{
-	margin-top: 50px;
 	font-family: 'Open Sans';
 	color: $first-color;
-	font-weight: 400;
-	padding-bottom: 50px;
 	&_wrapper {
 		display: flex;
 	}
@@ -32,22 +75,26 @@
 	}
 	&_info {
 		width: 100%;
-		padding-top: 40px;
+		padding-top: 20px;
 		border-left: 1px solid rgba($color: $first-color, $alpha: 0.6);
 		&_wrapper {
 			display: flex;
 			justify-content: space-between;
 			min-height: 180px;
 			padding-right: 237px;
+			padding-bottom: 35px;
 			border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
 		}
 	}
 	&_contacts {
-		padding-left: 45px;
+		margin-top: 60px;
+		font-weight: 400;
+		font-size: 18px;
 	}
 	&_address {
 		width: 190px;
 		position: relative;
+		line-height: 20px;
 		&::before {
 			content: url(../../svgicons/nav.svg);
 			position: absolute;
@@ -75,13 +122,24 @@
 		}
 	}
 	&_menu {
-		text-transform: uppercase;
-		font-size: 16px;
-		li {
+		margin-left: 75px;
+		&_list {
+			margin-top: 35px;
+			font-size: 18px;
+		}
+		&_name {
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 18px;
 			margin-bottom: 10px;
-			a {
-				color: $first-color;
-			}
+		}
+		a {
+			color: $first-color;
+
+		}
+		li {
+			margin-top: 5px;
 		}
 	}
 	&_authorship {
