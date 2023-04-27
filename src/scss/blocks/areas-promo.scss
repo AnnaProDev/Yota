@@ -1,0 +1,34 @@
+.areas-promo {
+	&_wrapper {
+		display: flex;
+		min-height: 360px;
+	}
+	.title {
+		font-size: 98px;
+		line-height: 108px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+		width: 670px;
+	}
+	.form {
+		width: 410px;
+		padding: 50px 30px 20px 30px;
+		border-right: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		border-left: 1px solid rgba($color: $first-color, $alpha: 0.6);
+	}
+	&_text {
+		width: 360px;
+		padding: 40px 10px 20px 5px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		div {
+			margin-bottom: 20px;
+		}
+	}
+	&_img {
+		margin: 15px 0px;
+		width: 100%;
+	}
+}

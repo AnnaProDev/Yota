@@ -1,0 +1,37 @@
+.service-main {
+	margin-top: 73px;
+	min-width: 900px;
+	.container {
+		display: flex;
+		gap: 15px;
+	}
+	.title {
+		font-size: 98px;
+		line-height: 98px;
+	}
+	.form {
+		height: 270px;
+		margin-top: 305px;
+		border-top: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+	}
+	&_img {
+		display: block;
+		object-fit: contain;
+	}
+	&_descr {
+		display: flex;
+		flex-direction: column;
+		height: 800px;
+	}
+	&_text {
+		margin-top: 5px;
+		width: 350px;
+		font-family: 'Open Sans';
+		text-align: justify;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: $first-color;
+	}
+	}

@@ -1,0 +1,42 @@
+.form {
+	padding: 40px 0;
+	&_title {
+		font-family: 'Fjalla One';
+		font-weight: 400;
+		font-size: 26px;
+		align-items: center;
+		text-transform: uppercase;
+		color: $first-color;
+	}
+	&_input{
+		margin-top: 15px;
+		padding-bottom: 5px;
+		width: 100%;
+		height: 20px;
+		font-family: 'Open Sans';
+		color:$first-color;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		background-color: #F8FAFF;
+		&::placeholder {
+			text-transform: uppercase;
+			color: $first-color;
+			opacity: 0.3;
+		}
+	}
+	&_select {
+		padding-bottom: 5px;
+		width: 100%;
+		height: 28px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 19px;
+		text-transform: uppercase;
+		background-color: #F8FAFF;
+		color: $first-color;
+		border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+	}
+}

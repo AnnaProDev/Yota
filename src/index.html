@@ -12,20 +12,20 @@
 	</section>
 	<section class="main" style="background-image: url('@img/bg-promo.png')">
 		<div class="container" >
-			<div class="form">
-				<form id="form" action="#">
-					<div class="title form_title">Book a service</div>
+			<div class="main-form">
+				<form id="main-form" action="#">
+					<div class="title main-form_title">Book a service</div>
 					<div class="form_item">
-						<input class="form_input" type="text" placeholder="Full Name">
+						<input class="main-form_input" type="text" placeholder="Full Name">
 					</div>
-					<div class="form_item">
-						<input class="form_input" type="email" placeholder="email">
+					<div class="main-form_item">
+						<input class="main-form_input" type="email" placeholder="email">
 					</div>
-					<div class="form_item">
-						<input class="form_input" type="phone" placeholder="phone">
+					<div class="main-form_item">
+						<input class="main-form_input" type="phone" placeholder="phone">
 					</div>
-					<div class="form_item">
-						<textarea class="form_input" type="text" placeholder="massage"></textarea>
+					<div class="main-form_item">
+						<textarea class="main-form_input" type="text" placeholder="massage"></textarea>
 					</div>
 					<button type="submit" class="button">submit</button>
 				</form>
@@ -194,7 +194,7 @@
 						</div>
 					</div>
 					<div class="line"></div>
-					<a class="button button_middle" href="#">Book a service</a>
+					<a class="button" href="book-a-service.html">Book a service</a>
 				</div>
 			</div>
 		</div>	
@@ -228,7 +228,7 @@
 					</div>
 				</div>
 			<div class="line"></div>
-			<a class="button button_large" href="#">book a service</a>
+			<a class="button" href="book-a-service.html">book a service</a>
 		</div>
 	</section>
 	<section class="contact" id="contacts">
@@ -384,6 +384,7 @@
 			</div>
 		</div>
 	</section>
+	@@include('html/call.html')
 	@@include('html/footer.html')
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>

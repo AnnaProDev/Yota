@@ -2,7 +2,8 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
 
-new Swiper(".slider", {
+if (document.querySelectorAll(".reviews")) {
+	new Swiper(".slider", {
 	//Arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -10,6 +11,8 @@ new Swiper(".slider", {
 	 },
 	 slidesPerView: 2,
 })
+}
+
 
 
 const plus = document.querySelectorAll(".services_item_name");
@@ -18,27 +21,53 @@ const button = document.querySelectorAll(".services_button");
 const image = document.querySelectorAll(".services_img");
 const minus = document.querySelectorAll(".services_item_plus");
 
-let previouslyClickedIndex = null;
 
-plus.forEach((element, i) => {
-  element.addEventListener('click', () => {
-    // Check if another plus element was already clicked
-    if (previouslyClickedIndex !== null && previouslyClickedIndex !== i) {
-      descr[previouslyClickedIndex].classList.remove('active_flex');
-      button[previouslyClickedIndex].classList.remove('active');
-      minus[previouslyClickedIndex].classList.remove('active_plus');
-		image[previouslyClickedIndex].classList.remove('active');
-    }
+if (plus.length > 0) {
+	let previouslyClickedIndex = null;
+	plus.forEach((element, i) => {
+		element.addEventListener('click', () => {
+			// Check if another plus element was already clicked
+			if (previouslyClickedIndex !== null && previouslyClickedIndex !== i) {
+				descr[previouslyClickedIndex].classList.remove('active_flex');
+				button[previouslyClickedIndex].classList.remove('active');
+				minus[previouslyClickedIndex].classList.remove('active_plus');
+				image[previouslyClickedIndex].classList.remove('active');
+			}
 
-    // Toggle the active classes and the display of the corresponding content
-    descr[i].classList.toggle('active_flex');
-    button[i].classList.toggle('active');
-    minus[i].classList.toggle('active_plus');
-	 image[i].classList.toggle('active');
+			// Toggle the active classes and the display of the corresponding content
+			descr[i].classList.toggle('active_flex');
+			button[i].classList.toggle('active');
+			minus[i].classList.toggle('active_plus');
+			image[i].classList.toggle('active');
 
-    previouslyClickedIndex = i;
-  });
-});
+			previouslyClickedIndex = i;
+		});
+	});
+}
+
+
+const servicePlus = document.querySelectorAll(".questions_item_subtitle");
+const serviceDescr = document.querySelectorAll(".questions_item_descr");
+const serviceMinus = document.querySelectorAll(".questions_item_plus");
+
+if (servicePlus.length > 0) {
+	let previouslyClickedIndex = null;
+	servicePlus.forEach((element, i) => {
+		element.addEventListener('click', () => {
+			// Check if another plus element was already clicked
+			if (previouslyClickedIndex !== null && previouslyClickedIndex !== i) {
+				serviceDescr[previouslyClickedIndex].classList.remove('active');
+				serviceMinus[previouslyClickedIndex].classList.remove('active_plus');
+			}
+
+			// Toggle the active classes and the display of the corresponding content
+			serviceDescr[i].classList.toggle('active');
+			serviceMinus[i].classList.toggle('active_plus');
+
+			previouslyClickedIndex = i;
+		});
+	});
+}
 
 window.addEventListener('DOMContentLoaded', () => {
   // any additional code here

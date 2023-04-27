@@ -1,4 +1,5 @@
 .button {
+	box-sizing: border-box;
 	display: block;
 	margin: 15px 0px;
 	padding: 9px 114px;
@@ -15,17 +16,11 @@
 	color: #FFFFFF;
 	align-self: flex-end;
 	transition: all 0.3s;
-	&_middle {
-		width: 1095px;
-	}
-	&_large {
-		margin-top: 30px;
-		width: 100%;
-	}
+	width: 100%;
 	&:hover {
-		background: #FFFFFF;
+		background: #F8FAFF;
 		color: $first-color;
-		border: 2px solid $first-color;
+		border: 1px solid $first-color;
 	}
 }
 
@@ -55,4 +50,16 @@
 	font-size: 16px;
 	text-transform: uppercase;
 	color: $first-color;
+}
+
+.active {
+	display: block;
+	&_flex {
+	display: flex;
+	}
+	&_plus{
+		&::after {
+			transform: rotate(0deg);
+		}
+	}
 }

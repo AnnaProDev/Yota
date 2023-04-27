@@ -1,0 +1,56 @@
+@@include('html/head.html')
+<body>
+	@@include('html/header.html')
+	<div class="book-a-service">
+		<div class="container">
+			<div class="title">Schedule a service</div>
+			<div class="form">
+				<form id="book-form" action="#"></form>
+				<div class="form_item">
+					<select name ="type" class="form_select">
+						<option value="Not selected" selected>Please choose an option</option>
+						<option value="Trash compactor repair service">Trash compactor repair service</option>
+						<option value="Refrigerator repair service">Refrigerator repair service</option>
+						<option value="Freezer repair service">Freezer repair service</option>
+						<option value="Dishwasher repair service">Dishwasher repair service</option>
+						<option value="Washing machine repair service">Washing machine repair service</option>
+						<option value="Dryer repair service">Dryer repair service</option>
+						<option value="Wine cooler repair service">Wine cooler repair service</option>
+						<option value="Range repair service">Range repair service</option>
+						<option value="Oven repair service">Oven repair service</option>
+						<option value="Microwave repair service">Microwave repair service</option>
+					</select>
+				</div>				
+				<div class="form_item">
+					<input class="form_input" type="text" placeholder="First Name">
+				</div>
+				<div class="form_item">
+					<input class="form_input" type="text" placeholder="Last Name">
+				</div>
+				<div class="form_item">
+					<input class="form_input" type="email" placeholder="email address">
+				</div>
+				<div class="form_item">
+					<input class="form_input" type="phone" placeholder="phone number">
+				</div>
+				<div class="form_item">
+					<textarea class="form_input" type="text" placeholder="Please let us know if you have any special requests"></textarea>
+				</div>
+				<a class="privacy" href="#">Data protected and privacy</a>
+				<button type="submit" class="button">schedule a service</button>
+				</div>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="overlay">
+			<div class="popup" id="thanks">
+				<div class="title">Thank you! <br> <br> your INQUIRY has been sent</div>	
+				<div class="button">close</div>		
+			</div>
+		</div>
+	</section>
+	@@include('html/footer.html')
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+</html>

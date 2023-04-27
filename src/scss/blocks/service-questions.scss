@@ -1,0 +1,62 @@
+.questions {
+	margin-top: 120px;
+	.title {
+		margin-bottom: 15px;
+	}
+	&_items {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+	}
+	&_item {
+		display: flex;
+		flex-direction: column;
+		width: 1095px;
+		padding: 15px 0px;
+		font-family: 'Open Sans';
+		font-weight: 400;
+		border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		&_subtitle {
+			display: flex;
+			position: relative;
+			justify-content: space-between;
+			font-size: 16px;
+		}
+		&_name {
+			width: 380px;
+		}
+		&_plus {
+			width: 24px;
+			height: 24px;
+			cursor: pointer;
+			&::before,
+			&::after {
+			content: "";
+			position:absolute;
+			top: 7px;
+			width: 24px;
+			height: 2px;
+			background-color:$first-color;
+			transition: transform 0.3s ease 0s;
+			}
+			&::after {
+				transform: rotate(-90deg);
+			}
+		}
+		&_descr {
+			display: none;
+			margin-top: 15px;
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+}
+
+.active {
+	display: block;
+	&_plus{
+		&::after {
+			transform: rotate(0deg);
+		}
+	}
+}
