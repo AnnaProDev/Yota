@@ -24,19 +24,20 @@
 		font-weight: 400;
 		border-top: 1px solid rgba($color: $first-color, $alpha: 0.6);
 		img {
-			margin-right: 30px;
 			object-fit: contain;
 		}
 	}
 	&_subtitle {
-		min-width: 250px;
-		margin-right: 120px;
+		display: flex;
+		justify-content: space-between;
+		width: 715px;
 		font-weight: 600;
 		font-size: 18px;
 	}
 	&_text {
 		display: flex;
 		justify-content: space-between;
+		margin-left: 30px;
 		gap: 15px;
 		font-size: 14px;
 		line-height: 17px;
@@ -46,3 +47,4 @@
 		}
 	}
 }
+

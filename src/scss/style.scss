@@ -63,13 +63,13 @@ body {
 	max-width: 1600px;
 	padding: 0 70px;
 	margin: 0 auto;
-	@media (max-width: $md1) {
+	@media (max-width: ($md1 + px)) {
 		min-width: 970px;
 	}
-	@media (max-width: $md2) {
+	@media (max-width: ($md2 + px)) {
 		min-width: 750px;
 	}
-	@media (max-width: $md2) {
+	@media (max-width: ($md3 + px)) {
 		min-width: none;
 		padding: 0 10px;
 	}

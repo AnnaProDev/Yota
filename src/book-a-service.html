@@ -1,7 +1,7 @@
 @@include('html/head.html')
 <body>
 	@@include('html/header.html')
-	<div class="book-a-service">
+	<section class="book-a-service">
 		<div class="container">
 			<div class="title">Schedule a service</div>
 			<div class="form">
@@ -39,16 +39,15 @@
 				<a class="privacy" href="#">Data protected and privacy</a>
 				<button type="submit" class="button">schedule a service</button>
 				</div>
+				<div class="line"></div>
 			</div>
-		</div>
-		<div class="line"></div>
+		</section>
 		<div class="overlay">
 			<div class="popup" id="thanks">
 				<div class="title">Thank you! <br> <br> your INQUIRY has been sent</div>	
 				<div class="button">close</div>		
 			</div>
 		</div>
-	</section>
 	@@include('html/footer.html')
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="js/app.min.js"></script>

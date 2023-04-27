@@ -2,12 +2,13 @@
 	margin-top: 120px;
 	text-align: center;
 	.container {
-		display: inline-flex;
+		display: flex;
+		justify-content: space-between;
 		padding-right: 0;
 	}
 	.title {
-		min-width: 442px;
-		margin-right: 303px;
+		width: 442px;
+		margin-right: 290px;
 		text-align: left;
 	}
 	.slider {
@@ -39,7 +40,6 @@
 	}
 	.swiper-buttons {
 		position: relative;
-		width: 10px;
 	}
 
 	.swiper-button-next {
@@ -60,4 +60,13 @@
 			color: $first-color;
 		}
 	}
+}
+
+@media (max-width:($md1 + px)) {
+	.reviews {
+		.title {
+		margin-right: 70px;
+		}
+	}
+
 }

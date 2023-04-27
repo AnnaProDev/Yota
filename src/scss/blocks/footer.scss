@@ -53,7 +53,7 @@
 	&_social {
 		width: 160px;
 		margin-right: 205px;
-		padding-top: 40px;
+		margin-top: 50px;
 		&_icons {
 			margin-top: 10px;
 			img {
@@ -75,15 +75,12 @@
 	}
 	&_info {
 		width: 100%;
-		padding-top: 20px;
-		border-left: 1px solid rgba($color: $first-color, $alpha: 0.6);
 		&_wrapper {
 			display: flex;
-			justify-content: space-between;
 			min-height: 180px;
-			padding-right: 237px;
 			padding-bottom: 35px;
-			border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+			padding-top: 20px;
+			border-left: 1px solid rgba($color: $first-color, $alpha: 0.6);
 		}
 	}
 	&_contacts {
@@ -102,7 +99,7 @@
 			top: -3px;
 		}
 	}
-	&_schedule {
+	&_schedule {			
 		margin-top: 15px;
 		position: relative;
 		&::before {
@@ -123,6 +120,7 @@
 	}
 	&_menu {
 		margin-left: 75px;
+		width: 260px;
 		&_list {
 			margin-top: 35px;
 			font-size: 18px;
@@ -144,6 +142,7 @@
 	}
 	&_authorship {
 		padding: 15px;
+		padding-left: 375px;
 		display: flex;
 		justify-content: space-between;
 		&_name {

@@ -11,9 +11,11 @@
 	}
 	.form {
 		height: 270px;
-		margin-top: 305px;
 		border-top: 1px solid rgba($color: $first-color, $alpha: 0.6);
 		border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+	}
+	.button {
+		margin-top: 30px;
 	}
 	&_img {
 		display: block;
@@ -22,7 +24,7 @@
 	&_descr {
 		display: flex;
 		flex-direction: column;
-		height: 800px;
+		justify-content: space-between;
 	}
 	&_text {
 		margin-top: 5px;
@@ -34,4 +36,4 @@
 		line-height: 17px;
 		color: $first-color;
 	}
-	}
+}

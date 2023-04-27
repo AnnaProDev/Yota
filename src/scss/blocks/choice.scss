@@ -7,6 +7,7 @@
 	}
 	.title {
 		width: 388px;
+		width: 25%;
 	}
 	&_items {
 		display: flex;
@@ -14,8 +15,9 @@
 		min-height: 707px;
 	}
 	&_item {
-		padding: 15px;
+		width: 33.333%;
 		max-width: 350px;
+		padding: 15px;
 		height: 350px;
 		border: 1px solid rgba(34, 35, 37, 0.6);
 		border-radius: 6px;
