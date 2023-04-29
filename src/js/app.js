@@ -15,11 +15,12 @@ if (document.querySelectorAll(".reviews")) {
 
 
 
-const plus = document.querySelectorAll(".services_item_name");
-const descr = document.querySelectorAll(".services_item_descr");
+const plus = document.querySelectorAll(".services_plus_wrapper");
+const descr = document.querySelectorAll(".services_text_1");
+const descr_2 = document.querySelectorAll(".services_text_2");
 const button = document.querySelectorAll(".services_button");
 const image = document.querySelectorAll(".services_img");
-const minus = document.querySelectorAll(".services_item_plus");
+const minus = document.querySelectorAll(".services_plus");
 
 
 if (plus.length > 0) {
@@ -28,14 +29,16 @@ if (plus.length > 0) {
 		element.addEventListener('click', () => {
 			// Check if another plus element was already clicked
 			if (previouslyClickedIndex !== null && previouslyClickedIndex !== i) {
-				descr[previouslyClickedIndex].classList.remove('active_flex');
+				descr[previouslyClickedIndex].classList.remove('active');
+				descr_2[previouslyClickedIndex].classList.remove('active');
 				button[previouslyClickedIndex].classList.remove('active');
 				minus[previouslyClickedIndex].classList.remove('active_plus');
 				image[previouslyClickedIndex].classList.remove('active');
 			}
 
 			// Toggle the active classes and the display of the corresponding content
-			descr[i].classList.toggle('active_flex');
+			descr[i].classList.toggle('active');
+			descr_2[i].classList.toggle('active');
 			button[i].classList.toggle('active');
 			minus[i].classList.toggle('active_plus');
 			image[i].classList.toggle('active');

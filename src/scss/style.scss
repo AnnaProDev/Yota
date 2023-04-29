@@ -22,6 +22,7 @@ $second-color: #FFCC00;
 
 //<NULL, COMMON PARAMETERS>========================================================================
 @import 'base/null';
+@import 'base/mixins';
 body {
 	background-color: #F8FAFF;
 	color: $first-color;
