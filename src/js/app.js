@@ -14,40 +14,35 @@ if (document.querySelectorAll(".reviews")) {
 }
 
 
-
+//Function for show for service's elements
 const plus = document.querySelectorAll(".services_plus_wrapper");
-const descr = document.querySelectorAll(".services_text_1");
-const descr_2 = document.querySelectorAll(".services_text_2");
-const button = document.querySelectorAll(".services_button");
-const image = document.querySelectorAll(".services_img");
+const name = document.querySelectorAll(".services_subtitle");
 const minus = document.querySelectorAll(".services_plus");
+const item = document.querySelectorAll(".services_item");
 
-
-if (plus.length > 0) {
+function addElements(part) {
 	let previouslyClickedIndex = null;
-	plus.forEach((element, i) => {
+	part.forEach((element, i) => {
 		element.addEventListener('click', () => {
 			// Check if another plus element was already clicked
 			if (previouslyClickedIndex !== null && previouslyClickedIndex !== i) {
-				descr[previouslyClickedIndex].classList.remove('active');
-				descr_2[previouslyClickedIndex].classList.remove('active');
-				button[previouslyClickedIndex].classList.remove('active');
 				minus[previouslyClickedIndex].classList.remove('active_plus');
-				image[previouslyClickedIndex].classList.remove('active');
+				item[previouslyClickedIndex].classList.add('grid-hiderows');
 			}
-
-			// Toggle the active classes and the display of the corresponding content
-			descr[i].classList.toggle('active');
-			descr_2[i].classList.toggle('active');
-			button[i].classList.toggle('active');
 			minus[i].classList.toggle('active_plus');
-			image[i].classList.toggle('active');
+			item[i].classList.toggle('grid-hiderows');
 
 			previouslyClickedIndex = i;
 		});
 	});
 }
 
+if (plus.length > 0 && name.length > 0) {
+	addElements(plus);
+	addElements(name);
+}
+
+//Function for show page's elements
 
 const servicePlus = document.querySelectorAll(".questions_item_subtitle");
 const serviceDescr = document.querySelectorAll(".questions_item_descr");
@@ -62,7 +57,6 @@ if (servicePlus.length > 0) {
 				serviceDescr[previouslyClickedIndex].classList.remove('active');
 				serviceMinus[previouslyClickedIndex].classList.remove('active_plus');
 			}
-
 			// Toggle the active classes and the display of the corresponding content
 			serviceDescr[i].classList.toggle('active');
 			serviceMinus[i].classList.toggle('active_plus');
@@ -71,6 +65,7 @@ if (servicePlus.length > 0) {
 		});
 	});
 }
+
 
 window.addEventListener('DOMContentLoaded', () => {
   // any additional code here

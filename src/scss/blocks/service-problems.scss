@@ -22,7 +22,7 @@
 		justify-content: space-between;
 		font-family: 'Open Sans';
 		font-weight: 400;
-		border-top: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		border-top: $border;
 		img {
 			object-fit: contain;
 		}

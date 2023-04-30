@@ -3,29 +3,27 @@
 	@@include('html/header.html')
 	<section class="service-main">
 		<div class="container">
-			<img src="@img/services-page/refrigerator.png" alt="refrigerator">
-			<div class="service-main_descr">
-				<div class="service-main_title">
-					<div class="title">REFRIGERATOR <br> <span>REPAIR SERVICE</span> </div>
-					<div class="service-main_text">
-						We offer the best home appliance repair services in San Diego County. We will repair and maintain your refrigerator in top working condition to ensure your special occasions go smoothly. Contact us on (619)648-3806 or book a fridge repair service online.
+			<img class="service-main_img" src="@img/services-page/refrigerator.png" alt="refrigerator">
+			<div class="service-main_title">
+				<div class="title">REFRIGERATOR <br> <span>REPAIR SERVICE</span> </div>
+				<div class="service-main_text">
+					We offer the best home appliance repair services in San Diego County. We will repair and maintain your refrigerator in top working condition to ensure your special occasions go smoothly. Contact us on (619)988-3363 or book a fridge repair service online.
+				</div>
+			</div>
+			<div class="form">
+				<form id="form-service" action="#">
+					<div class="form_title">Book a service</div>
+					<div class="form_item">
+						<input required type="text" name ="FullName" class="form_input" placeholder="full name*">
 					</div>
-				</div>
-				<div class="form">
-					<form id="form-service" action="#">
-						<div class="form_title">Book a service</div>
-						<div class="form_item">
-							<input required type="text" name ="FullName" class="form_input" placeholder="full name*">
-						</div>
-						<div class="form_item">
-							<input required type="text" name ="email" class="form_input" placeholder="email*">
-						</div>
-						<div class="form_item">
-							<input required type="phone" name ="phone" class="form_input" placeholder="phone*">
-						</div>
-						<button class="button" type="submit">submit</button>
-					</form>
-				</div>
+					<div class="form_item">
+						<input required type="text" name ="email" class="form_input" placeholder="email*">
+					</div>
+					<div class="form_item">
+						<input required type="phone" name ="phone" class="form_input" placeholder="phone*">
+					</div>
+					<button class="button" type="submit">submit</button>
+				</form>
 			</div>
 		</div>
 	</section>

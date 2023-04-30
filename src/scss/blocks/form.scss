@@ -18,7 +18,7 @@
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 19px;
-		border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		border-bottom: $border;
 		background-color: #F8FAFF;
 		&::placeholder {
 			text-transform: uppercase;
@@ -37,6 +37,6 @@
 		text-transform: uppercase;
 		background-color: #F8FAFF;
 		color: $first-color;
-		border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		border-bottom: $border;
 	}
 }

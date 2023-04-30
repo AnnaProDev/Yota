@@ -15,7 +15,7 @@
 		padding: 15px 0px;
 		font-family: 'Open Sans';
 		font-weight: 400;
-		border-bottom: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		border-bottom: $border;
 		&_subtitle {
 			display: flex;
 			position: relative;

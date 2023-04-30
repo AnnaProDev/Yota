@@ -5,7 +5,7 @@
 		right: -50%;
 		height: 300px;
 		width: 50%;
-		border-left: 1px solid rgba($color: $first-color, $alpha: 0.6);
+		border-left: $border;
 	}
 	&_descr {
 		display: flex;
@@ -34,23 +34,15 @@
 		display: flex;
 		flex-direction: column;
 	}
-	&_item {
-		margin-top: 5px;
-		padding-top: 15px;
-		position: relative;
-		display: grid;
-		grid-template-columns: 345px 365px 340px;
-		grid-template-rows: 24px 160px 40px 1px;
-		gap: 15px;
-	}
 	&_name {
+		padding-top: 15px;
 		font-family: 'Open Sans';
 		font-weight: 600;
 		font-size: 18px;
-		line-height: 20px;
 		color: $first-color;
 	}
 	&_subtitle {
+		padding-top: 15px;
 		font-family: 'Open Sans';
 		font-weight: 400;
 		font-size: 18px;
@@ -74,34 +66,26 @@
 		&::after {
 			transform: rotate(-90deg);
 		}
-		&_wrapper {
-			padding-top: 15px;
-			padding-right: 5px;
-		}
 	}
 	&_img {
-		padding-top: 5px;
 		max-height: 210px;
 		object-fit: contain;
-		display: none;
 	}
 	&_text {
-		padding-bottom: 25px;
+		padding-bottom: 10px;
 		color: $first-color;
 		text-align: justify;
 		font-family: 'Open Sans';
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 17px;
-		display: none;
 	}
 	&_button {
 		grid-column-start: 3;
 		grid-column-end: 4;
-		display: none;
 		.button {
 			margin: 0;
-			padding: 7px 100px;
+			padding: 7px 0px;
 			height: 40px;
 			background: $first-color;
 			border-radius: 50px;
@@ -112,7 +96,6 @@
 			text-align: center;
 			text-transform: uppercase;
 			color: #FFFFFF;
-			transition: all 0.3s;
 			&:hover {
 				background: #FFFFFF;
 				color: $first-color;
@@ -120,8 +103,46 @@
 			}
 		}
 	}
-	.line {
-		grid-column-start: 2;
-		grid-column-end: 4;
+	.mb15 {
+		margin-bottom: 15px;
 	}
+	&_item {
+		margin-top: 5px;
+		position: relative;
+		display: grid;
+		grid-template-columns: 32% 35% auto;
+		grid-template-rows: 24px minmax(160px auto) 40px 1px;
+		column-gap: 15px;
+		row-gap: 15px;
+	}
+	.line {
+		&_long {
+			margin-top: 0px;
+		}
+		&_short {
+			grid-column-start: 2;
+			grid-column-end: 4;
+			margin-top: 0px;
+		}
+	}
+}
+
+.grid-hiderows {
+	grid-template-rows: 40px 0px 0px 1px;
+	row-gap: 0px;
+	margin-bottom: 15px;
+	.services_img {
+		display: none;
+	}
+	.services_text{
+		display: none;
+	}
+	.services_button {
+		display: none;
+		margin-bottom: 0;
+	}
+	.line_short{
+		margin-top: 15px;
+	}
+
 }
