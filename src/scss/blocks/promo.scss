@@ -1,5 +1,4 @@
 .promo {
-	min-height: 255px;
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -39,12 +38,17 @@
 @media (max-width: 991.98px){
 	.promo {
 		.container {
-			max-width: 750px;
+			width: 100%;
+			padding: 0 20px;
+		}
+		.title {
+			font-size: 75px;
 		}
 	}
 }
 @media (max-width: 767.98px){
 	.promo {
+		min-height: 330px;
 		.container {
 			max-width: 100%;
 			display: block;
@@ -57,19 +61,20 @@
 			margin-top: 35px;
 			width: 290px;
 			border-left: none;
-			padding: 0px 0px 0px 15px;
+			padding: 0px;
 			float: right;
 		}
 	}
 }
 @media (max-width: 576.98px) {
 	.promo {
+		min-height: 244px;
 		.container {
 		max-width: 100%;
-		padding: 0 10px;
+		padding: 0 10px 15px 10px;
 	}
 	.title {
-		font-size: 50px;
+		font-size: 48px;
 		max-width: 340px;
 		width: 340px;
 	}
@@ -79,5 +84,4 @@
 		float: none;
 	}
 	}
-
 }

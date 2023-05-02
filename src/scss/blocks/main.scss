@@ -1,8 +1,9 @@
 .main {
 	min-height: 646px;
-	background-size:cover;
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: 50%;
+	background-image: url('../../img/bg-promo.png');
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -11,7 +12,7 @@
 		width: 365px;
 		padding: 87px 15px;
 		height: 100%;
-		background: rgba($color: #FFFFFF, $alpha: .8);
+		background: rgba($color: #D5D1CF, $alpha: .8);
 		color:$first-color;
 		.button {
 			width: 100%;
@@ -42,5 +43,46 @@
 			min-height: 182px;
 			resize: none;
 		}
+	}
+}
+
+@media (max-width: 1199.98px){
+	.main {
+		.container {
+			max-width: 100%;
+			padding-right: 20px;
+		}
+
+	}
+}
+
+@media (max-width: 767.98px){
+	.main {
+		background-image: url('../../img/bg-main-mid.png');
+		min-height: 646px;
+		.container {
+			max-width: 100%;
+		}
+		.main-form {
+			max-width: 290px;
+		}
+	}
+}
+@media (max-width: 576.98px) {
+	.main {
+		background-image: url('../../img/bg-main-min.png');
+		.container {
+		max-width: 100%;
+		padding: 104px 0;
+	}
+	.main-form {
+		max-width: 100%;
+		min-width: 100%;
+		padding: 20px 10px;
+		textarea {
+			min-height: 112px;
+		}
+	}
+
 	}
 }

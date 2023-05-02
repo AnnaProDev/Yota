@@ -119,3 +119,34 @@ window.addEventListener('DOMContentLoaded', () => {
 		body.classList.toggle('lock');
 });
 })
+
+const plus_2 = document.querySelectorAll(".services_subtitle_2");
+const sub_2 = document.querySelectorAll(".services_subtitle_2_wrapper");
+const image_2 = document.querySelectorAll(".services_img_2");
+const minus_2 = document.querySelectorAll(".services_plus_2");
+const button_2 = document.querySelectorAll(".services_button_2");
+const text_2 = document.querySelectorAll(".services_text_2");
+
+if (plus_2 .length > 0) {
+	let previouslyClickedIndex = null;
+	plus_2.forEach((element, i) => {
+		element.addEventListener('click', () => {
+			// Check if another plus element was already clicked
+			if (previouslyClickedIndex !== null && previouslyClickedIndex !== i) {
+				image_2[previouslyClickedIndex].classList.remove('active');
+				minus_2[previouslyClickedIndex].classList.remove('active_plus');
+				button_2[previouslyClickedIndex].classList.remove('active');
+				text_2[previouslyClickedIndex].classList.remove('active_flex');
+				sub_2[previouslyClickedIndex].classList.remove('services_subtitle_2_active');
+			}
+			// Toggle the active classes and the display of the corresponding content
+			image_2[i].classList.toggle('active');
+			minus_2[i].classList.toggle('active_plus');
+			button_2[i].classList.toggle('active');
+			text_2[i].classList.toggle('active_flex');
+			sub_2[i].classList.toggle('services_subtitle_2_active');
+
+			previouslyClickedIndex = i;
+		});
+	});
+}

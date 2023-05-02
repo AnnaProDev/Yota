@@ -53,6 +53,9 @@
 .active {
 	display: block;
 	opacity: 1;
+	&_flex {
+		display: flex;
+	}
 	&_plus{
 		&::after {
 			transform: rotate(0deg);
