@@ -3,9 +3,11 @@
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
 	.main-form {
-		position: relative;
-		right: -75%;
 		width: 365px;
 		padding: 87px 15px;
 		height: 100%;

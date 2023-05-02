@@ -2,15 +2,13 @@
 	box-sizing: border-box;
 	display: block;
 	margin: 15px 0px;
-	padding: 9px 114px;
-	width: 350px;
 	height: 40px;
 	background: $first-color;
 	border-radius: 50px;
 	font-family: 'Fjalla One';
 	font-weight: 400;
 	font-size: 26px;
-	line-height: 26px;
+	line-height: 40px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -54,12 +52,13 @@
 
 .active {
 	display: block;
-	&_flex {
-	display: flex;
-	}
+	opacity: 1;
 	&_plus{
 		&::after {
 			transform: rotate(0deg);
 		}
+	}
+	&_rotate {
+		transform: rotate(180deg);
 	}
 }

@@ -66,7 +66,56 @@ if (servicePlus.length > 0) {
 	});
 }
 
+//Function for show menu-hamburger's 
+
+const listName = document.querySelectorAll(".menu_item_name");
+const arrow = document.querySelectorAll(".menu_item_img");
+const list = document.querySelectorAll(".menu_item_list");
+
+if (listName.length > 0) {
+	let previouslyClickedIndex = null;
+	listName.forEach((element, i) => {
+		element.addEventListener('click', () => {
+			// Check if another plus element was already clicked
+			if (previouslyClickedIndex !== null && previouslyClickedIndex !== i) {
+				list[previouslyClickedIndex].classList.remove('menu_item_list_active');
+				arrow[previouslyClickedIndex].classList.remove('active_rotate');
+			}
+			// Toggle the active classes and the display of the corresponding content
+			list[i].classList.toggle('menu_item_list_active');
+			arrow[i].classList.toggle('active_rotate');
+
+			previouslyClickedIndex = i;
+		});
+	});
+}
+
 
 window.addEventListener('DOMContentLoaded', () => {
-  // any additional code here
+  //Menu-hamburger
+	const menu = document.querySelector('.menu');
+	const menuItem = document.querySelectorAll('.menu_item');
+	const hamburger = document.querySelector('.hamburger');
+	const body = document.querySelector('body');
+	const cross = document.querySelector('.menu_close')
+
+
+	hamburger.addEventListener('click', () => {
+		menu.classList.toggle('menu_active');
+	});
+
+	menuItem.forEach(item => {
+		item.addEventListener('click', () => {
+			menu.classList.toggle('menu_active');
+		})
+	})
+
+	cross.addEventListener('click', () => {
+		menu.classList.toggle('menu_active');
+		body.classList.toggle('lock');
+	});
+
+	body.addEventListener('click', () => {
+		body.classList.toggle('lock');
 });
+})

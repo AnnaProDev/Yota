@@ -51,12 +51,3 @@
 		}
 	}
 }
-
-.active {
-	display: block;
-	&_plus{
-		&::after {
-			transform: rotate(0deg);
-		}
-	}
-}

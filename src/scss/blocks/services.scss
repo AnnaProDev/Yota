@@ -31,6 +31,7 @@
 		margin-top: 20px;
 	}
 	&_list {
+		margin-top: 5px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -39,6 +40,7 @@
 		font-family: 'Open Sans';
 		font-weight: 600;
 		font-size: 18px;
+		line-height: 24px;
 		color: $first-color;
 	}
 	&_subtitle {
@@ -46,7 +48,8 @@
 		font-family: 'Open Sans';
 		font-weight: 400;
 		font-size: 18px;
-		color: $first-color;
+		color: $first-color;		
+		line-height: 24px;
 	}
 	&_plus {
 		float: right;
@@ -68,8 +71,16 @@
 		}
 	}
 	&_img {
-		max-height: 210px;
-		object-fit: contain;
+		position: relative;
+		max-width: 255px;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			object-fit:cover;
+		}
+		
 	}
 	&_text {
 		padding-bottom: 10px;
@@ -81,18 +92,16 @@
 		line-height: 17px;
 	}
 	&_button {
-		grid-column-start: 3;
-		grid-column-end: 4;
+		grid-column: 3 / 4;
 		.button {
 			margin: 0;
-			padding: 7px 0px;
 			height: 40px;
 			background: $first-color;
 			border-radius: 50px;
 			font-family: 'Fjalla One';
 			font-weight: 400;
 			font-size: 26px;
-			line-height: 26px;
+			line-height: 40px;
 			text-align: center;
 			text-transform: uppercase;
 			color: #FFFFFF;
@@ -107,7 +116,6 @@
 		margin-bottom: 15px;
 	}
 	&_item {
-		margin-top: 5px;
 		position: relative;
 		display: grid;
 		grid-template-columns: 32% 35% auto;
@@ -120,8 +128,7 @@
 			margin-top: 0px;
 		}
 		&_short {
-			grid-column-start: 2;
-			grid-column-end: 4;
+			grid-column: 2 / 4;
 			margin-top: 0px;
 		}
 	}
