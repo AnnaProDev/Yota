@@ -1,0 +1,53 @@
+.call {
+	margin-top: 160px;
+	.title {
+		max-width: 606px;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 66px;
+	}
+	.button {
+		margin: 20px auto;
+		width: 573px;
+	}
+	&_phone {
+		margin-top: 25px;
+		font-family: 'Fjalla One';
+		font-weight: 400;
+		font-size: 33px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $first-color;
+	}
+	.line {
+		margin-top: 10px;
+		opacity: 1;
+		&_1 {
+			opacity: 0.4;
+			margin-top: 40px;
+		}
+		&_2 {
+			opacity: 0.5;
+		}
+		&_3 {
+			opacity: 0.6;
+		}
+		&_4 {
+			opacity: 0.7;
+		}
+		&_5 {
+			opacity: 0.8;
+		}
+		&_6 {
+			opacity: 0.9;
+		}
+	}
+}
+
+@media (max-width: 1199.98px){}
+
+@media (max-width: 991.98px){}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 576.98px) {}

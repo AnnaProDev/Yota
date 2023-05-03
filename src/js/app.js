@@ -120,6 +120,8 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 })
 
+//Function for show page's elements @media (max-width: 767.98px)
+
 const plus_2 = document.querySelectorAll(".services_subtitle_2");
 const sub_2 = document.querySelectorAll(".services_subtitle_2_wrapper");
 const image_2 = document.querySelectorAll(".services_img_2");
@@ -150,3 +152,14 @@ if (plus_2 .length > 0) {
 		});
 	});
 }
+
+//Function for show reviews @media (max-width: 767.98px)
+
+const more = document.querySelector(".reviews_button");
+const slide = document.querySelectorAll(".slider_item");
+
+slide.forEach((slideItem) => {
+  more.addEventListener("click", () => {
+    slideItem.classList.toggle("slider_item_block");
+  });
+});
