@@ -54,11 +54,11 @@ if (servicePlus.length > 0) {
 		element.addEventListener('click', () => {
 			// Check if another plus element was already clicked
 			if (previouslyClickedIndex !== null && previouslyClickedIndex !== i) {
-				serviceDescr[previouslyClickedIndex].classList.remove('active');
+				serviceDescr[previouslyClickedIndex].classList.remove('questions_item_descr_active');
 				serviceMinus[previouslyClickedIndex].classList.remove('active_plus');
 			}
 			// Toggle the active classes and the display of the corresponding content
-			serviceDescr[i].classList.toggle('active');
+			serviceDescr[i].classList.toggle('questions_item_descr_active');
 			serviceMinus[i].classList.toggle('active_plus');
 
 			previouslyClickedIndex = i;
@@ -163,3 +163,15 @@ slide.forEach((slideItem) => {
     slideItem.classList.toggle("slider_item_block");
   });
 });
+
+//Function for show brands @media (max-width: 576.98px)
+
+const moreBrands = document.querySelector(".brands_button");
+const brands = document.querySelector(".brands_items");
+
+if ( brands ) {
+	  moreBrands.addEventListener("click", () => {
+    brands.classList.toggle("hidden_rows");
+  });
+}
+

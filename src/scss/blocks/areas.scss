@@ -34,10 +34,47 @@
 	}
 }
 
-@media (max-width: 1199.98px){}
+@media (max-width: 991.98px){
+	.areas {
+		.container {
+			width: 100%;
+			padding: 0 20px;
+		}
+		.title {
+			margin-right: 20px;
+		}
+	}
+}
 
-@media (max-width: 991.98px){}
+@media (max-width: 767.98px) {
+	.areas {
+		.container {
+			display: block;
+		}
+		.title {
+			margin-right: 20px;
+		}
+		&_list {
+			margin-top: 30px;
+			width: 100%;
+		}
+	}
+}
 
-@media (max-width: 767.98px) {}
-
-@media (max-width: 576.98px) {}
+@media (max-width: 576.98px) {
+	.areas {
+		.container {
+			padding: 0 10px;
+		}
+		.title {
+			font-size: 40px;
+			line-height: 44px;
+		}
+		.subtitle {
+			margin-top: 5px;
+		}
+		&_city {
+			line-height: 48px ;
+		}
+	}
+}

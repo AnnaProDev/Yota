@@ -8,7 +8,7 @@
 	}
 	.button {
 		margin: 20px auto;
-		width: 573px;
+		max-width: 573px;
 	}
 	&_phone {
 		margin-top: 25px;
@@ -44,10 +44,18 @@
 	}
 }
 
-@media (max-width: 1199.98px){}
+@media (max-width: 767.98px){
+	.call {
+		margin-top: 100px;
+	}
+}
 
-@media (max-width: 991.98px){}
-
-@media (max-width: 767.98px) {}
-
-@media (max-width: 576.98px) {}
+@media (max-width: 576.98px) {
+	.call {
+		margin-top: 80px;
+		.title {
+			font-size: 40px;
+			line-height: 44px;
+		}
+	}
+}

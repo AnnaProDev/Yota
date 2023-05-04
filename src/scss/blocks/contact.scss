@@ -40,6 +40,7 @@
 	&_form {
 		position: relative;
 		padding: 40px 0 ;
+		max-width: 350px;
 		&_title {
 			font-family: 'Fjalla One';
 			font-weight: 400;
@@ -130,6 +131,7 @@
 		&_form {
 			width: 290px;
 			padding-right: 10px;
+			margin: 0 auto;
 		}
 	}
 }

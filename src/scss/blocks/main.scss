@@ -63,7 +63,7 @@
 		.container {
 			max-width: 100%;
 		}
-		.main-form {
+		&_empty .main-form {
 			max-width: 290px;
 		}
 	}
@@ -72,11 +72,12 @@
 	.main {
 		background-image: url('../../img/bg-main-min.png');
 		.container {
-		max-width: 100%;
+			display: block;
+		width: 100%;
 		padding: 104px 0;
 	}
 	.main-form {
-		max-width: 100%;
+		width: 100%;
 		padding: 20px 10px;
 		textarea {
 			min-height: 112px;

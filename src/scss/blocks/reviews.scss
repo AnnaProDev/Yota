@@ -7,9 +7,15 @@
 		padding-right: 0;
 	}
 	.title {
-		width: 442px;
-		@include adaptive-value("margin-right", 290, 20, 0);
+		max-width: 440px;
 		text-align: left;
+		margin-right: 40px;
+	}
+	.slider_min_items {
+		display: none;
+	}
+	&_button {
+		display: none;
 	}
 	.slider {
 		position: relative;
@@ -140,17 +146,23 @@
 		}
 		.slider_item {
 			display: none;
+			margin: 0 auto;
 			margin-top: 10px;
-			width: 340px;
-			height: 335px;
+			width: 300px;
+			height: 300px;
 			&_visible {
 				display: block;
 			}
 			&_block {
 				display: block;
 			}
+			&_text {
+				width: 100%;
+			}
 		}
 		&_button {
+			margin: 0 auto;
+			width: 100%;
 			display: block;
 			margin-top: 10px;
 			font-family: 'Open Sans';
@@ -158,6 +170,7 @@
 			font-weight: 600;
 			font-size: 14px;
 			line-height: 110%;
+			text-align: center;
 		}
 	}
 }
