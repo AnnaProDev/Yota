@@ -74,8 +74,10 @@
 	}
 	&_menu {
 		margin-left: 75px;
-		width: 260px;
+		width: 270px;
 		&_list {
+			display: flex;
+			flex-direction: column;
 			margin-top: 35px;
 			font-size: 18px;
 		}
@@ -87,11 +89,8 @@
 			margin-bottom: 10px;
 		}
 		a {
-			color: $first-color;
-
-		}
-		li {
 			margin-top: 5px;
+			color: $first-color;
 		}
 	}
 	&_authorship {

@@ -3,7 +3,7 @@
 	@@include('html/header.html')
 	<section class="book-a-service">
 		<div class="container">
-			<div class="title">Schedule a service</div>
+			<h2 class="title">Schedule a service</h2>
 			<div class="form">
 				<form id="book-form" action="#"></form>
 				<div class="form_item">
@@ -31,12 +31,12 @@
 					<input class="form_input" type="email" placeholder="email address">
 				</div>
 				<div class="form_item">
-					<input class="form_input" type="phone" placeholder="phone number">
+					<input class="form_input" type="tel" placeholder="phone number">
 				</div>
 				<div class="form_item">
-					<textarea class="form_input" type="text" placeholder="Please let us know if you have any special requests"></textarea>
+					<textarea class="form_input" placeholder="Please let us know if you have any special requests"></textarea>
 				</div>
-				<a class="privacy" href="#">Data protected and privacy</a>
+				<a class="privacy" href="https://bigcityhomeservice.com/privacy-policy">Data protected and privacy</a>
 				<button type="submit" class="button">schedule a service</button>
 				</div>
 				<div class="line"></div>
@@ -44,8 +44,11 @@
 		</section>
 		<div class="overlay">
 			<div class="popup" id="thanks">
-				<div class="title">Thank you! <br> <br> your INQUIRY has been sent</div>	
-				<div class="button">close</div>		
+				<div class="title">
+					<h2>Thank you!</h2> 
+					<div class="mt40" >your INQUIRY has been sent</div>
+				</div>
+				<div class="button popup_button">close</div>		
 			</div>
 		</div>
 	@@include('html/footer.html')

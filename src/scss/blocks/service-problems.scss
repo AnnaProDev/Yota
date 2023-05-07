@@ -1,20 +1,33 @@
 .problems {
 	margin-top: 120px;
 	&_title {
+		margin-top: 20px;
 		display: flex;
 		align-items: end;
 		padding-bottom: 15px;
 		.title {
 			width: 50%;
 		}
+
 	}
 	&_info {
+		width: 50%;
 		max-width: 350px;
+		display: flex;
+		align-items: end;
 		font-family: 'Open Sans';
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 17px;
 		padding-left: 20px;
+		padding-top: 20px;
+		gap:15px;
+	}
+	.long-text {
+		max-width: 700px;
+		span {
+			width: 50%;
+		}
 	}
 	&_item {
 		padding: 20px 0px;

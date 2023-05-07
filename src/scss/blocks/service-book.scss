@@ -74,6 +74,11 @@
 		}
 		&_button {
 			margin-top: 50px;
+			&:hover {
+				color: $first-color;
+				background: #ffff;
+				border: none;
+			}
 		}
 	}
 }

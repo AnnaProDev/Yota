@@ -13,7 +13,6 @@ if (document.querySelectorAll(".reviews")) {
 })
 }
 
-
 //Function for show for service's elements
 const plus = document.querySelectorAll(".services_plus_wrapper");
 const name = document.querySelectorAll(".services_subtitle");
@@ -59,7 +58,7 @@ if (servicePlus.length > 0) {
 			}
 			// Toggle the active classes and the display of the corresponding content
 			serviceDescr[i].classList.toggle('questions_item_descr_active');
-			serviceMinus[i].classList.toggle('active_plus');
+			serviceMinus[i].classList.toggle('questions_item_plus_active');
 
 			previouslyClickedIndex = i;
 		});

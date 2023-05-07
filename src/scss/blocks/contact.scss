@@ -132,6 +132,13 @@
 			width: 290px;
 			padding-right: 10px;
 			margin: 0 auto;
+			&_button {
+				&:hover {
+					color: $first-color;
+					background: #ffff;
+					border: none;
+				}
+			}
 		}
 	}
 }

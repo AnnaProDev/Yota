@@ -42,6 +42,12 @@
 			&::after {
 				transform: rotate(-90deg);
 			}
+			&_active {
+				&::after {
+					transform: rotate(0deg);
+				}
+			}
+			
 		}
 		&_descr {
 			display: none;
