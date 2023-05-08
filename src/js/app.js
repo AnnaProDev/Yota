@@ -174,3 +174,16 @@ if ( brands ) {
   });
 }
 
+//Style for areas
+
+const allCities = document.querySelectorAll(".areas_city_link");
+const city = document.querySelector("#city");
+
+if (city) {
+	allCities.forEach((element) => {
+	  const textCity = element.textContent;
+	  if (city.textContent === textCity) {
+		 element.classList.add("areas_city_bold");
+	  }
+	})
+ }
