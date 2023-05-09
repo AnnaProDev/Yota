@@ -1,10 +1,10 @@
 .service-main {
 	margin-top: 73px;
-	max-height: 1200px;
 	.container {
+		min-height: 860px;
 		display: grid;
 		grid-template-columns: minmax(550px, 800px) auto;
-		grid-template-rows: auto auto auto;
+		grid-template-rows: 285px auto 280px;
 		column-gap: 15px;
 	}
 	.title {
@@ -12,7 +12,6 @@
 		line-height: 98px;
 	}
 	.form {
-		margin-top: 300px;
 		border-top: $border;
 		border-bottom: $border;
 	}
@@ -20,7 +19,7 @@
 		margin-top: 30px;
 	}
 	&_img {
-		grid-row: 1/5;
+		grid-row: 1/4;
 		position: relative;
 		width: 100%;
 		img {

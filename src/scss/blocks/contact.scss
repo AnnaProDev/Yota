@@ -1,6 +1,5 @@
 .contact {
 	margin-top: 120px;
-	height: 600px;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: $first-color;
@@ -32,10 +31,6 @@
 			left: 0;
 			object-fit:contain;
 		}
-
-	}
-	input {
-		background-color: $first-color;
 	}
 	&_form {
 		position: relative;
@@ -50,6 +45,7 @@
 			color: #FFFFFF;
 		}
 		&_input{
+			background-color: $first-color;
 			margin-top: 15px;
 			width: 100%;
 			height: 18px;
@@ -71,7 +67,7 @@
 			padding: 7px 114px;
 			width: 100%;
 			height: 40px;
-			background: #FFFFFF;
+			background-color: #FFFFFF;
 			border-radius: 50px;
 			font-family: 'Fjalla One';
 			font-weight: 400;
@@ -112,7 +108,6 @@
 
 @media (max-width: 767.98px) {
 	.contact {
-		height: 460px;
 		padding-top: 60px;
 		.title {
 			text-align: center;
