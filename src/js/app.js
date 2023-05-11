@@ -2,6 +2,7 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
 
+//Slider
 if (document.querySelectorAll(".reviews")) {
 	new Swiper(".slider", {
 	//Arrows
@@ -12,6 +13,15 @@ if (document.querySelectorAll(".reviews")) {
 	 slidesPerView: 2,
 })
 }
+
+
+//Mask for phone number
+if (document.querySelector('input[type="tel"]')) {
+	document.querySelector('input[type="tel"]').addEventListener('input', function (e) {
+		var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+		e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+	 });
+	}
 
 //Function for show for service's elements
 const plus = document.querySelectorAll(".services_plus_wrapper");
