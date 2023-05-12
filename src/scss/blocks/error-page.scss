@@ -1,0 +1,34 @@
+.error-404 {
+	padding-top: 200px;
+	&_first {
+		margin: 0 auto;
+		display: flex;
+		height: 120px;
+		align-items: end;
+		justify-content: center;
+	}
+	.title {
+		display: block;
+		text-align: center;
+		font-size: 96px;
+		line-height: 96px;
+	}
+	.line {
+		&_short {
+			margin: 0 auto;
+			width: 745px;
+		}
+	}
+	&_text {
+		text-align: center;
+		font-family: 'Fjalla One';
+		font-style: normal;
+		font-weight: 400;
+		margin-top: 20px;
+		font-size: 50px;
+	}
+	.button {
+		margin: 100px auto;
+		width: 730px;
+	}
+}

@@ -14,6 +14,25 @@ if (document.querySelectorAll(".reviews")) {
 })
 }
 
+//Smooth scroll
+var links = document.querySelectorAll("a");
+
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      var targetElement = document.querySelector(hash);
+      var targetTop = targetElement.offsetTop;
+      window.scrollTo({
+        top: targetTop,
+        behavior: "smooth"
+      });
+      history.replaceState(null, null, hash);
+    }
+  });
+}
+
 
 //Mask for phone number
 if (document.querySelector('input[type="tel"]')) {
